@@ -1,0 +1,23 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+$primaryColor: #f3a683;
+$seconsaryColor: #f7d794;
+$lightColor: #333;
+$darkColor: #353b48;
+
+$textColor: #262626;
+$textWhite: #fff;
+
+
+body{
+    color: #262626;
+    font-size: 15px;
+    line-height: 1.5em ;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins';
+    margin: 0 0 15px;
+}

@@ -1,0 +1,39 @@
+// utilities
+@import "utilities";
+// service
+@import "service";
+// Mixin
+@import "mixin";
+
+// Extend Oparetor
+#cta3{
+    @extend #cta;
+    background: $primaryColor;
+    width:50% + 50%;
+}
+
+// Function
+@function setTextColor($color){
+    @if(lightness($color) > 75){
+        @return #333;
+    }
+
+    @else{
+        @return #fff;
+    }
+}
+
+
+@mixin setBackground($color){
+    background: $color;
+    color: setTextColor($lightColor);
+}
+
+
+#cta4{
+    @extend #cta2;
+    @include setBackground($lightColor);
+    h2{
+        color: setTextColor($lightColor);
+    }
+}
